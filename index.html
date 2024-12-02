@@ -2134,7 +2134,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1733106688547),
+    lastupdate: new Date(1733140036130),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2788,9 +2788,85 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/12/02/从Leafy-Tree到WBLT/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="fush">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="fush">
+    <meta itemprop="description" content="">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2024/12/02/%E4%BB%8ELeafy-Tree%E5%88%B0WBLT/"  itemprop="url">
+        从Leafy Tree到WBLT
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        前言
+前面说过 FHQ-treap 的缺点在于常数。
+这次篇文章要讲解 WBLT，码量与 FHQ-treap 差的不多，结构与线段树类似。
+也可以分裂合并（不推荐），可持久化，但常数远小于 FHQ-treap。
+美中不足的是：需要两倍的空间。 其实影响不大，
+Leafy Tree
+Leafy Tree 其实是一类树，它的核心思想在于将数据全部存放在叶节点中。
+而我们耳熟能详的线段树本质上也属...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-12-02T12:48:43+08:00">2024-12-02</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/c/">c++</a><span class="sep"></span><a class="category-link" href="/categories/c/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/c/" itemprop="url"><span itemprop="name">c++</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/c/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url"><span itemprop="name">数据结构</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2024/12/02/%E4%BB%8ELeafy-Tree%E5%88%B0WBLT/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -2965,19 +3041,24 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='md article-desc' itemprop="articleBody">
     
       
-         前置知识
+        前置知识
+必要
 
 二叉搜索树
 堆
 c++
-有旋treap
 
- 前言
-fhq-treap 又名 “无旋treap”，是范浩强大佬基于treap开发的。有着码量小，易理解，常数小等特点（对于其他高级平衡树），是 OI 中十分优秀的数据结构。
- 原理与代码
+选要
+
+旋转treap
+
+前言
+fhq-treap 又名 “无旋treap”，有着码量小，易理解，可持久化等特点。
+但 fhq-treap 的常数较大。
+原理与代码
 treap 的每个节点都有一个随机的优先级。
 treap 的权值要具有二叉搜索树的性质，优先级满足堆的性质。
-fhq-treap 有两个关键函数 ...
+fhq-treap 有两个关键函数 slipt 和 merge，分别是分裂...
       
     
   </div>
@@ -2985,7 +3066,7 @@ fhq-treap 有两个关键函数 ...
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-11-25T13:24:31+08:00">2024-11-25</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-11-25T17:24:31+08:00">2024-11-25</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/c/">c++</a><span class="sep"></span><a class="category-link" href="/categories/c/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
@@ -3116,12 +3197,12 @@ fhq-treap 有两个关键函数 ...
           <li><a class="flat-box"
             title="/categories/c/" href="/categories/c/"
             active-action="action-categoriesc"
-            ><div class='name'>c++</div><div class='badge'>(1)</div></a></li>
+            ><div class='name'>c++</div><div class='badge'>(2)</div></a></li>
         
           <li><a class="flat-box child"
             title="/categories/c/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" href="/categories/c/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"
             active-action="action-categoriescE695B0E68DAEE7BB93E69E84"
-            ><div class='name'>数据结构</div><div class='badge'>(1)</div></a></li>
+            ><div class='name'>数据结构</div><div class='badge'>(2)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/volantis/" href="/categories/volantis/"
@@ -3161,7 +3242,7 @@ fhq-treap 有两个关键函数 ...
 
 
     <div class='content'>
-      <a href="/tags/treap/" style="font-size: 14px; color: #999">treap</a> <a href="/tags/volantis/" style="font-size: 14px; color: #999">volantis</a> <a href="/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/" style="font-size: 14px; color: #999">平衡树</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 14px; color: #999">数据结构</a> <a href="/tags/%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/" style="font-size: 14px; color: #999">最长上升子序列</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 14px; color: #999">题解</a>
+      <a href="/tags/Leafy-Tree/" style="font-size: 14px; color: #999">Leafy-Tree</a> <a href="/tags/WBLT/" style="font-size: 14px; color: #999">WBLT</a> <a href="/tags/treap/" style="font-size: 14px; color: #999">treap</a> <a href="/tags/volantis/" style="font-size: 14px; color: #999">volantis</a> <a href="/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/" style="font-size: 24px; color: #555">平衡树</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 24px; color: #555">数据结构</a> <a href="/tags/%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/" style="font-size: 14px; color: #999">最长上升子序列</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 14px; color: #999">题解</a>
     </div>
   </section>
 
