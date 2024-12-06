@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/tags/bit/"/>
+  <link rel="canonical" href="http://example.com/tags/splay/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -44,12 +44,12 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：BIT - fush</title>
+  <title>标签：splay - fush</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="fush - fush - fush">
   <meta property="og:type" content="website">
 <meta property="og:title" content="fush">
-<meta property="og:url" content="http://example.com/tags/BIT/index.html">
+<meta property="og:url" content="http://example.com/tags/splay/index.html">
 <meta property="og:site_name" content="fush">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/m7vu27io.png">
@@ -2714,7 +2714,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/12/04/洛谷-P5673题解/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/12/06/splay初步/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="fush">
   </span>
@@ -2732,23 +2732,45 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/12/04/%E6%B4%9B%E8%B0%B7-P5673%E9%A2%98%E8%A7%A3/"  itemprop="url">
-        洛谷-P5673题解
+      <a href="/2024/12/06/splay%E5%88%9D%E6%AD%A5/"  itemprop="url">
+        Splay初步
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        题目链接
-我们先看一道弱化版：P1972。
-在 P1972 中，我们将询问离线，每个颜色当前的最后一位才有贡献。
-在这道题，我们每个颜色有了不同的贡献，从保留一位变成保留 kkk 个。
-我们先对当前位置单点加。
-如果超出 kkk 个，就把最前面的数减去。
-答案就是当前的区间和。
-用树状数组做单点修改、区间查询，用 vector 访问前面的数。
-123456789101112131415161...
+         前言
+前置知识：
+
+二叉搜索树
+
+其实 splay 的实现蛮多的，如果真的要能懂的话建议自己画图理解。
+加油。
+ 基础操作
+ 准备操作
+我们先把节点要维护的先定义出来。
+
+
+
+子树大小
+节点的权值
+左儿子
+右儿子
+父亲
+
+
+
+
+size
+val
+ch[0]
+ch[1]
+fa
+
+
+
+1234struct node&#123;int size, val, ch[2], fa;&#125;d[N...
       
     
   </div>
@@ -2756,24 +2778,24 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-12-04T16:05:50+08:00">2024-12-04</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-12-06T09:11:07+08:00">2024-12-06</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a><span class="sep"></span><a class="category-link" href="/categories/%E9%A2%98%E8%A7%A3/%E6%B4%9B%E8%B0%B7/">洛谷</a>
+          <a class="category-link" href="/categories/c/">c++</a><span class="sep"></span><a class="category-link" href="/categories/c/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
           
             <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E9%A2%98%E8%A7%A3/" itemprop="url"><span itemprop="name">题解</span></a>
+              <a href="/categories/c/" itemprop="url"><span itemprop="name">c++</span></a>
             </span>
           
             <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E9%A2%98%E8%A7%A3/%E6%B4%9B%E8%B0%B7/" itemprop="url"><span itemprop="name">洛谷</span></a>
+              <a href="/categories/c/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url"><span itemprop="name">数据结构</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='/2024/12/04/%E6%B4%9B%E8%B0%B7-P5673%E9%A2%98%E8%A7%A3/' itemprop="url">
+          <a class='readmore' href='/2024/12/06/splay%E5%88%9D%E6%AD%A5/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3907,7 +3929,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"fush","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"fush"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/tags/BIT/","name":"BIT"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"fush","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"fush","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","description":"","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"fush","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"fush","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"fush"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/tags/splay/","name":"splay"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"fush","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"fush","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","description":"","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"fush","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
