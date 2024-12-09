@@ -2133,7 +2133,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1733737318023),
+    lastupdate: new Date(1733740456088),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2744,12 +2744,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='md article-desc' itemprop="articleBody">
     
       
-        前言前置知识：
+         前言
+前置知识：
 
 二叉搜索树
 
-其实 splay 的实现蛮多的，如果真的要能懂的话建议自己画图理解。加油。
-基础操作准备操作我们先把节点要维护的先定义出来。
+其实 splay 的实现蛮多的，如果真的要能懂的话建议自己画图理解。
+加油。
+ 基础操作
+ 准备操作
+我们先把节点要维护的先定义出来。
 
 
 
@@ -2761,6 +2765,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
+
 size
 val
 ch[0]
@@ -2768,7 +2773,8 @@ ch[1]
 fa
 
 
-1234struct node&#123;int size, val, ch[2], fa;&#125;d[N];#define...
+
+1234struct node&#123;int size, val, ch[2], fa;&#125;d[N...
       
     
   </div>
@@ -2835,12 +2841,15 @@ fa
   <div class='md article-desc' itemprop="articleBody">
     
       
-        题目链接我们先看一道弱化版：P1972。
+        题目链接
+我们先看一道弱化版：P1972。
 在 P1972 中，我们将询问离线，每个颜色当前的最后一位才有贡献。
-在这道题，我们每个颜色有了不同的贡献，从保留一位变成保留 $k$ 个。
-我们先对当前位置单点加。如果超出 $k$ 个，就把最前面的数减去。答案就是当前的区间和。
+在这道题，我们每个颜色有了不同的贡献，从保留一位变成保留 kkk 个。
+我们先对当前位置单点加。
+如果超出 kkk 个，就把最前面的数减去。
+答案就是当前的区间和。
 用树状数组做单点修改、区间查询，用 vector 访问前面的数。
-123456789101112131415161718...
+123456789101112131415161...
       
     
   </div>
@@ -2907,14 +2916,14 @@ fa
   <div class='md article-desc' itemprop="articleBody">
     
       
-        题目链接我们先把环断成链。
-转换题意：$f_{i, j} &#x3D; f_{i - 1, j - 1} \bigoplus f_{i - 1, j + 1}$。
-其中第一维是操作次数，$\bigoplus$ 是异或。
-由于 $T$ 很大，而且大概率是不会有循环的。  
+        题目链接
+我们先把环断成链。
+转换题意：fi,j=fi−1,j−1⨁fi−1,j+1f_{i, j} = f_{i - 1, j - 1} \bigoplus f_{i - 1, j + 1}fi,j​=fi−1,j−1​⨁fi−1,j+1​。
+其中第一维是操作次数，⨁\bigoplus⨁ 是异或。
+由于 TTT 很大，而且大概率是不会有循环的。
 那么我们先画图：
-因为是异或，所以橙色点的状态我们并不用在意。
-我们可以猜出结论：
-$$f_{i, j} &#x3D; f...
+
+因为是异或，所以橙色点的...
       
     
   </div>
@@ -2981,12 +2990,14 @@ $$f_{i, j} &#x3D; f...
   <div class='md article-desc' itemprop="articleBody">
     
       
-        前言前面说过 FHQ-treap 的缺点在于常数。
+         前言
+前面说过 FHQ-treap 的缺点在于常数。
 这次篇文章要讲解 WBLT，码量与 FHQ-treap 差的不多，结构与线段树类似。
 也可以分裂合并（不推荐），可持久化，但常数远小于 FHQ-treap。
 美中不足的是：需要两倍的空间。 其实影响不大，
-Leafy TreeLeafy Tree 其实是一类树，它的核心思想在于将数据全部存放在叶节点中。
-而我们耳熟能详的线段树本质上也属于 ...
+ Leafy Tree
+Leafy Tree 其实是一类树，它的核心思想在于将数据全部存放在叶节点中。
+而我们耳熟能详的线段树本质上...
       
     
   </div>
