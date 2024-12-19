@@ -52,11 +52,11 @@
 <meta property="og:title" content="洛谷-P7196题解">
 <meta property="og:url" content="http://example.com/2024/12/19/%E6%B4%9B%E8%B0%B7-P7196%E9%A2%98%E8%A7%A3/index.html">
 <meta property="og:site_name" content="fush">
-<meta property="og:description" content="前言 其实有很多地方出题人没讲清楚，所以只保证代码可以通过本题数据。  细节  神秘射线是停止一切生理活动（包括成长），会暂停，但不会打断繁殖。 繁殖后要动一下（包括旋转），才能继续繁殖。 顺序：武器 -&gt; 繁殖 -&gt; 移动。 注意老鼠刚出生时的年龄。 注意时间单位和时刻的区别。 繁殖是某点恰好有两只异性老鼠。 岔路的拐弯与当前这只老鼠面对岔路的次数奇偶性有关。 注意实时更新老鼠的数">
+<meta property="og:description" content="灭鼠行动。  前言 其实有很多地方出题人没讲清楚，所以只保证代码可以通过本题数据。  细节  神秘射线是停止一切生理活动（包括成长），会暂停，但不会打断繁殖。 繁殖后要动一下（包括旋转），才能继续繁殖。 顺序：武器 -&gt; 繁殖 -&gt; 移动。 注意老鼠刚出生时的年龄。 注意时间单位和时刻的区别。 繁殖是某点恰好有两只异性老鼠。 岔路的拐弯与当前这只老鼠面对岔路的次数奇偶性有关。 注意实时">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/m7vu27io.png">
 <meta property="article:published_time" content="2024-12-19T02:15:54.000Z">
-<meta property="article:modified_time" content="2024-12-19T02:16:19.097Z">
+<meta property="article:modified_time" content="2024-12-19T02:39:22.542Z">
 <meta property="article:author" content="fush">
 <meta property="article:tag" content="题解">
 <meta property="article:tag" content="模拟">
@@ -2139,7 +2139,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1734574944119),
+    lastupdate: new Date(1734575968903),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2791,7 +2791,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
+    <p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P7196">灭鼠行动</a>。</p>
+<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
 <p>其实有很多地方出题人没讲清楚，所以只保证代码可以通过本题数据。</p>
 <h2 id="细节"><a class="markdownIt-Anchor" href="#细节"></a> 细节</h2>
 <ul>
@@ -2832,7 +2833,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-12-19T10:16:19+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-12-19T10:39:22+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2024年12月19日</p>
@@ -4009,7 +4010,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"fush","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"fush"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/题解/","name":"题解"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/题解/洛谷/","name":"洛谷"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/12/19/洛谷-P7196题解/","name":"洛谷-P7196题解"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"fush","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"fush","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"洛谷-P7196题解","description":"","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/12/19/%E6%B4%9B%E8%B0%B7-P7196%E9%A2%98%E8%A7%A3/"},"author":{"@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"fush","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/12/19/%E6%B4%9B%E8%B0%B7-P7196%E9%A2%98%E8%A7%A3/","wordCount":0,"datePublished":"2024-12-19T02:15:54.000Z","dateModified":"2024-12-19T02:16:19.097Z","articleSection":"题解","keywords":"题解,模拟","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"fush","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"fush"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/题解/","name":"题解"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/题解/洛谷/","name":"洛谷"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/12/19/洛谷-P7196题解/","name":"洛谷-P7196题解"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"fush","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"fush","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"洛谷-P7196题解","description":"","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/12/19/%E6%B4%9B%E8%B0%B7-P7196%E9%A2%98%E8%A7%A3/"},"author":{"@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"fush","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/12/19/%E6%B4%9B%E8%B0%B7-P7196%E9%A2%98%E8%A7%A3/","wordCount":0,"datePublished":"2024-12-19T02:15:54.000Z","dateModified":"2024-12-19T02:39:22.542Z","articleSection":"题解","keywords":"题解,模拟","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
