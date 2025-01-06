@@ -2133,7 +2133,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1736055485023),
+    lastupdate: new Date(1736160802739),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2142,7 +2142,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     },
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
-      for_post: ["blogger","toc"],
+      for_post: ["blogger","categorty","toc"],
       webinfo: {
         lastupd: {
           enable: true,
@@ -2730,22 +2730,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <div class='md article-desc' itemprop="articleBody">
     
-      
-         前言
-默认读者会基本的 BST 操作和旋转操作。
-本文旋转部分的代码。
-rotate(x) 表示将 xxx 节点旋转到其父亲节点的位置。
-建议阅读：B 树
- 红黑树
- 规则
-红黑树的平衡不靠平衡因子实时监测，和 treap 的随机值，或像 splay 的均摊。
-红黑树的平衡完全靠自身的几条规则。
-红黑树有五大规则：
-
-所有节点只能是红/黑色。
-根节点一定是黑色。
-外部节点（可以理解为 nu...
-      
+      <p>在 OI 中，红黑树可是跑的最快的，其实很好写，就 100 行够了，希望看完后你能掌握它。</p>
     
   </div>
   
@@ -2810,40 +2795,7 @@ rotate(x) 表示将 xxx 节点旋转到其父亲节点的位置。
   
   <div class='md article-desc' itemprop="articleBody">
     
-      
-        luogu 阅读链接。
- 前言
-前置知识：
-
-二叉搜索树
-
-Splay 是最灵活的平衡树，除了常数和不能完全可持久化，它几乎没有缺点。
-可以放在 LCT、支持区间操作……
- 基础操作
- 准备操作
-我们先把节点要维护的先定义出来。
-
-
-
-子树大小
-节点的权值
-左儿子
-右儿子
-父亲
-
-
-
-
-size
-val
-ch[0]
-ch[1]
-fa
-
-
-
-1234struct node&#123;int s...
-      
+      <p>Splay 是最灵活的平衡树，除了常数和不能完全可持久化，它几乎没有缺点。</p>
     
   </div>
   
@@ -3059,17 +3011,7 @@ fa
   
   <div class='md article-desc' itemprop="articleBody">
     
-      
-        luogu 阅读链接
- 前言
-前面说过 FHQ-treap 的缺点在于常数。
-这次篇文章要讲解 WBLT，码量与 FHQ-treap 差的不多，结构与线段树类似。
-也可以分裂合并（不推荐），可持久化，但常数远小于 FHQ-treap。
-美中不足的是：需要两倍的空间。 其实影响不大，
- Leafy Tree
-Leafy Tree 其实是一类树，它的核心思想在于将数据全部存放在叶节点中。
-而我们...
-      
+      <p>线段树你肯定会吧，WBLT 就是把线段树和平衡树结合起来了。</p>
     
   </div>
   
@@ -3208,25 +3150,7 @@ Leafy Tree 其实是一类树，它的核心思想在于将数据全部存放在
   
   <div class='md article-desc' itemprop="articleBody">
     
-      
-        luogu 阅读链接。
- 前言
-fhq-treap 又名“无旋 treap”，有着码量小，易理解，可持久化等特点。
-但 fhq-treap 的常数较大。
-必要：
-
-二叉搜索树
-堆
-
-选要：
-
-旋转treap
-
- 基础操作
-treap 的每个节点都有一个随机的优先级。
-treap 的权值要具有二叉搜索树的性质，优先级满足堆的性质。
-fhq-treap 有两个关键函数 slipt 和 merge...
-      
+      <p>fhq-treap 又名“无旋 treap”，有着码量小，易理解，可持久化等特点。</p>
     
   </div>
   
@@ -3445,7 +3369,7 @@ fhq-treap 有两个关键函数 slipt 和 merge...
           <li><a class="flat-box child"
             title="/categories/DS/BBT/" href="/categories/DS/BBT/"
             active-action="action-categoriesDSBBT"
-            ><div class='name'>平衡树</div><div class='badge'>(8)</div></a></li>
+            ><div class='name'>平衡树</div><div class='badge'>(7)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/graph/" href="/categories/graph/"

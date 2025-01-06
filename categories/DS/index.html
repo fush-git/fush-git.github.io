@@ -2133,7 +2133,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1736055485023),
+    lastupdate: new Date(1736160802739),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2142,7 +2142,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     },
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
-      for_post: ["blogger","toc"],
+      for_post: ["blogger","categorty","toc"],
       webinfo: {
         lastupd: {
           enable: true,
@@ -2755,14 +2755,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <div class='md article-desc' itemprop="articleBody">
     
-      
-        luogu 阅读链接。
- 前言
-默认读者会 BST 的基本操作。
- 节点定义
-替罪羊树采用了懒惰删除的方法，不会立即删除某个点，而是在重构时不放进数组。
-12345678910111213141516171819struct node&#123;    int ch[2], val;    int siz1, siz2, cnt, sum;    //扣去懒惰删除的节点数量，没扣去懒惰删除的...
-      
+      <p>替罪羊树是一个优雅的暴力，以均摊 O(log(n)) 的时间复杂度和简单的代码闻名。</p>
     
   </div>
   
@@ -2827,18 +2820,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <div class='md article-desc' itemprop="articleBody">
     
-      
-        luogu 阅读链接。
- 前言
-无旋 treap。
-默认读者会 BST 的基本操作、堆的定义。
-如果没有特殊声明，本文的 treap 都指旋转 treap。
-本文使用的是小根堆。
- 思想
-treap 既是一棵二叉查找树（tree），也是一个二叉堆（heap）。
-但是如果这两个数据结构用同一个权值维护，那么这两种数据结构是矛盾的。
-所以 treap 用了一个很巧妙的方式：给每个节点附加一个随机...
-      
+      <p>treap = tree + heap，就比 BST 多了几行代码。</p>
     
   </div>
   
@@ -2903,16 +2885,7 @@ treap 既是一棵二叉查找树（tree），也是一个二叉堆（heap）。
   
   <div class='md article-desc' itemprop="articleBody">
     
-      
-        luogu 阅读链接。
- 前言
-默认读者会基本的 BST 操作。
- 基本操作
- 节点定义
-平衡因子：BF(BalanceFactor)，左子树高 −-− 右子树高。
-平衡树是让树的形态尽可能像完全二叉树，而不是链。
-在 AVL 中，我们认为 ∣BF∣≤1\left| BF \right| \le 1∣BF∣≤1，也就是 BFBFBF 为 000，111，−1-1−1 时的子树是平衡的，否则就...
-      
+      <p>平衡思路超简单，最早发明的自平衡二叉树，也是查询速度最快的平衡树，</p>
     
   </div>
   
@@ -3027,7 +3000,7 @@ BST 的单次操作最坏为 O(n)O(n)O(n)，nnn 表示 BST 内的节点数，即
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/article/DS/BBT/persistent_ds/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/article/DS/persistent_ds/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="fush">
   </span>
@@ -3045,27 +3018,14 @@ BST 的单次操作最坏为 O(n)O(n)O(n)，nnn 表示 BST 内的节点数，即
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/article/DS/BBT/persistent_ds/"  itemprop="url">
+      <a href="/article/DS/persistent_ds/"  itemprop="url">
         可持久化数据结构是什么
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
-      
-         简介
-可持久化后的数据结构并不会修改什么。
-它把所有版本都存了下来，每次修改都会新建一个副本，然后将修改作用于副本。
-这样，它就拥有数据回滚、访问历史版本的能力了。
-分类：
-
-部分可持久化：每个历史版本都可以访问，但只有最新的版本才可以修改。
-完全可持久化：每个历史版本都可以访问和修改。
-融合可持久化：每个历史版本都可以访问和修改，且支持通过合并两个历史版本来创建新版本。
-
- 核心思想
-一...
-      
+      <p>可持久化后的数据结构并不会修改什么。它把所有版本都存了下来，每次修改都会新建一个副本，然后将修改作用于副本。这样，它就拥有<strong>数据回滚</strong>、<strong>访问历史版本</strong>的能力了。</p>
     
   </div>
   
@@ -3075,21 +3035,17 @@ BST 的单次操作最坏为 O(n)O(n)O(n)，nnn 表示 BST 内的节点数，即
         <time itemprop="dateCreated datePublished" datetime="2024-12-10T18:40:23+08:00">2024-12-10</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/DS/">数据结构</a><span class="sep"></span><a class="category-link" href="/categories/DS/BBT/">平衡树</a>
+          <a class="category-link" href="/categories/DS/">数据结构</a>
           
             <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
               <a href="/categories/DS/" itemprop="url"><span itemprop="name">数据结构</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/DS/BBT/" itemprop="url"><span itemprop="name">平衡树</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='/article/DS/BBT/persistent_ds/' itemprop="url">
+          <a class='readmore' href='/article/DS/persistent_ds/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3130,22 +3086,7 @@ BST 的单次操作最坏为 O(n)O(n)O(n)，nnn 表示 BST 内的节点数，即
   
   <div class='md article-desc' itemprop="articleBody">
     
-      
-         前言
-默认读者会基本的 BST 操作和旋转操作。
-本文旋转部分的代码。
-rotate(x) 表示将 xxx 节点旋转到其父亲节点的位置。
-建议阅读：B 树
- 红黑树
- 规则
-红黑树的平衡不靠平衡因子实时监测，和 treap 的随机值，或像 splay 的均摊。
-红黑树的平衡完全靠自身的几条规则。
-红黑树有五大规则：
-
-所有节点只能是红/黑色。
-根节点一定是黑色。
-外部节点（可以理解为 nu...
-      
+      <p>在 OI 中，红黑树可是跑的最快的，其实很好写，就 100 行够了，希望看完后你能掌握它。</p>
     
   </div>
   
@@ -3210,40 +3151,7 @@ rotate(x) 表示将 xxx 节点旋转到其父亲节点的位置。
   
   <div class='md article-desc' itemprop="articleBody">
     
-      
-        luogu 阅读链接。
- 前言
-前置知识：
-
-二叉搜索树
-
-Splay 是最灵活的平衡树，除了常数和不能完全可持久化，它几乎没有缺点。
-可以放在 LCT、支持区间操作……
- 基础操作
- 准备操作
-我们先把节点要维护的先定义出来。
-
-
-
-子树大小
-节点的权值
-左儿子
-右儿子
-父亲
-
-
-
-
-size
-val
-ch[0]
-ch[1]
-fa
-
-
-
-1234struct node&#123;int s...
-      
+      <p>Splay 是最灵活的平衡树，除了常数和不能完全可持久化，它几乎没有缺点。</p>
     
   </div>
   
@@ -3308,17 +3216,7 @@ fa
   
   <div class='md article-desc' itemprop="articleBody">
     
-      
-        luogu 阅读链接
- 前言
-前面说过 FHQ-treap 的缺点在于常数。
-这次篇文章要讲解 WBLT，码量与 FHQ-treap 差的不多，结构与线段树类似。
-也可以分裂合并（不推荐），可持久化，但常数远小于 FHQ-treap。
-美中不足的是：需要两倍的空间。 其实影响不大，
- Leafy Tree
-Leafy Tree 其实是一类树，它的核心思想在于将数据全部存放在叶节点中。
-而我们...
-      
+      <p>线段树你肯定会吧，WBLT 就是把线段树和平衡树结合起来了。</p>
     
   </div>
   
@@ -3383,25 +3281,7 @@ Leafy Tree 其实是一类树，它的核心思想在于将数据全部存放在
   
   <div class='md article-desc' itemprop="articleBody">
     
-      
-        luogu 阅读链接。
- 前言
-fhq-treap 又名“无旋 treap”，有着码量小，易理解，可持久化等特点。
-但 fhq-treap 的常数较大。
-必要：
-
-二叉搜索树
-堆
-
-选要：
-
-旋转treap
-
- 基础操作
-treap 的每个节点都有一个随机的优先级。
-treap 的权值要具有二叉搜索树的性质，优先级满足堆的性质。
-fhq-treap 有两个关键函数 slipt 和 merge...
-      
+      <p>fhq-treap 又名“无旋 treap”，有着码量小，易理解，可持久化等特点。</p>
     
   </div>
   
@@ -3537,7 +3417,7 @@ fhq-treap 有两个关键函数 slipt 和 merge...
           <li><a class="flat-box child"
             title="/categories/DS/BBT/" href="/categories/DS/BBT/"
             active-action="action-categoriesDSBBT"
-            ><div class='name'>平衡树</div><div class='badge'>(8)</div></a></li>
+            ><div class='name'>平衡树</div><div class='badge'>(7)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/graph/" href="/categories/graph/"

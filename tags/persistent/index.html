@@ -2133,7 +2133,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1736055485023),
+    lastupdate: new Date(1736160802739),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2142,7 +2142,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     },
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
-      for_post: ["blogger","toc"],
+      for_post: ["blogger","categorty","toc"],
       webinfo: {
         lastupd: {
           enable: true,
@@ -2714,7 +2714,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/article/DS/BBT/persistent_ds/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/article/DS/persistent_ds/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="fush">
   </span>
@@ -2732,27 +2732,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/article/DS/BBT/persistent_ds/"  itemprop="url">
+      <a href="/article/DS/persistent_ds/"  itemprop="url">
         可持久化数据结构是什么
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
-      
-         简介
-可持久化后的数据结构并不会修改什么。
-它把所有版本都存了下来，每次修改都会新建一个副本，然后将修改作用于副本。
-这样，它就拥有数据回滚、访问历史版本的能力了。
-分类：
-
-部分可持久化：每个历史版本都可以访问，但只有最新的版本才可以修改。
-完全可持久化：每个历史版本都可以访问和修改。
-融合可持久化：每个历史版本都可以访问和修改，且支持通过合并两个历史版本来创建新版本。
-
- 核心思想
-一...
-      
+      <p>可持久化后的数据结构并不会修改什么。它把所有版本都存了下来，每次修改都会新建一个副本，然后将修改作用于副本。这样，它就拥有<strong>数据回滚</strong>、<strong>访问历史版本</strong>的能力了。</p>
     
   </div>
   
@@ -2762,21 +2749,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <time itemprop="dateCreated datePublished" datetime="2024-12-10T18:40:23+08:00">2024-12-10</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/DS/">数据结构</a><span class="sep"></span><a class="category-link" href="/categories/DS/BBT/">平衡树</a>
+          <a class="category-link" href="/categories/DS/">数据结构</a>
           
             <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
               <a href="/categories/DS/" itemprop="url"><span itemprop="name">数据结构</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/DS/BBT/" itemprop="url"><span itemprop="name">平衡树</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='/article/DS/BBT/persistent_ds/' itemprop="url">
+          <a class='readmore' href='/article/DS/persistent_ds/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2888,7 +2871,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <li><a class="flat-box child"
             title="/categories/DS/BBT/" href="/categories/DS/BBT/"
             active-action="action-categoriesDSBBT"
-            ><div class='name'>平衡树</div><div class='badge'>(8)</div></a></li>
+            ><div class='name'>平衡树</div><div class='badge'>(7)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/graph/" href="/categories/graph/"
