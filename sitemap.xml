@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/article/strings/automaton/ac-automaton/</loc>
+    
+    <lastmod>2025-05-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/article/DS/BBT/RBT,AAT/</loc>
     
     <lastmod>2025-05-31</lastmod>
@@ -149,15 +158,6 @@
     <loc>http://example.com/2024/11/29/atcoder-ARC126B%E9%A2%98%E8%A7%A3/index.html</loc>
     
     <lastmod>2025-05-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/article/strings/automaton/ac-automaton/</loc>
-    
-    <lastmod>2025-05-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
