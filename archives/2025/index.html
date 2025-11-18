@@ -2133,7 +2133,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1763032721452),
+    lastupdate: new Date(1763434861687),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2730,6 +2730,77 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/article/notes/Cir-inter-area/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="fush">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="fush">
+    <meta itemprop="description" content="">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/article/notes/Cir-inter-area/"  itemprop="url">
+        学习笔记《求圆面积并》
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+记录一下我们机房一位大佬的做法。
+我们先把重叠的圆删去，考虑求出合并后的轮廓，即每个圆没有交的圆弧。
+为了后面方便，我们要求每段圆弧是单调的。
+枚举每个圆，求出他和其他圆的交点（用与 x 轴正半轴的夹角表示）。
+那么两个节点间的圆弧是没用的，排序后，利用类似差分的思路即可。
+
+图中红圈表示当前圆，绿点表示 +1，蓝点表示 -1，黄点表示 0。
+用黄点是把圆分成 4 份单调的弧，起点为 0 ...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-11-18T09:45:41+08:00">2025-11-18</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/notes/">学习笔记</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/notes/" itemprop="url"><span itemprop="name">学习笔记</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/article/notes/Cir-inter-area/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
   <link itemprop="mainEntityOfPage" href="http://example.com/article/notes/slope/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="fush">
@@ -3315,75 +3386,6 @@ dpi,k=min⁡j=0i−1dpj,k−1+w(j+1,i)dp_{i, k} = \min_{j=0}^{i-1}dp_{j, k - 1} 
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/article/solution/CF1630F/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="fush">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="fush">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/article/solution/CF1630F/"  itemprop="url">
-        CF1630 Making It Bipartite 题解
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        luogu 阅读链接。
-题目链接。
-题目的边用的是倍数关系（偏序）。
-当 x→y,y→zx \rarr y, y \rarr zx→y,y→z，就必然有 x→zx \rarr zx→z。
-为了避免这种情况，意味着每个点要么只有因数，要么只有倍数。
-我们将每个点拆成两个点，x0x_0x0​ 表示图中 xxx 只能保留其的因数，x1x_1x1​ 表示其倍数。
-再用一条边 (x,y)(x, y)(...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-01-02T18:28:25+08:00">2025-01-02</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/solution/">题解</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/solution/" itemprop="url"><span itemprop="name">题解</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/article/solution/CF1630F/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
@@ -3507,7 +3509,7 @@ dpi,k=min⁡j=0i−1dpj,k−1+w(j+1,i)dp_{i, k} = \min_{j=0}^{i-1}dp_{j, k - 1} 
           <li><a class="flat-box"
             title="/categories/notes/" href="/categories/notes/"
             active-action="action-categoriesnotes"
-            ><div class='name'>学习笔记</div><div class='badge'>(6)</div></a></li>
+            ><div class='name'>学习笔记</div><div class='badge'>(7)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/solution/" href="/categories/solution/"
@@ -3542,7 +3544,7 @@ dpi,k=min⁡j=0i−1dpj,k−1+w(j+1,i)dp_{i, k} = \min_{j=0}^{i-1}dp_{j, k - 1} 
 
 
     <div class='content'>
-      <a href="/tags/BIT/" style="font-size: 14px; color: #999">BIT</a> <a href="/tags/BST/" style="font-size: 14px; color: #999">BST</a> <a href="/tags/DP/" style="font-size: 14px; color: #999">DP</a> <a href="/tags/FFT/" style="font-size: 14px; color: #999">FFT</a> <a href="/tags/splay/" style="font-size: 14px; color: #999">splay</a> <a href="/tags/volantis/" style="font-size: 14px; color: #999">volantis</a> <a href="/tags/wqs-binary-search/" style="font-size: 14px; color: #999">wqs二分</a> <a href="/tags/binary-lifting/" style="font-size: 14px; color: #999">倍增</a> <a href="/tags/quadrangle/" style="font-size: 14px; color: #999">决策单调性优化</a> <a href="/tags/%E5%88%86%E5%9D%97/" style="font-size: 14px; color: #999">分块</a> <a href="/tags/dynamic-tree/" style="font-size: 14px; color: #999">动态树</a> <a href="/tags/interval-DP/" style="font-size: 14px; color: #999">区间DP</a> <a href="/tags/persistent/" style="font-size: 14px; color: #999">可持久化</a> <a href="/tags/BBT/" style="font-size: 24px; color: #555">平衡树</a> <a href="/tags/xor-linear-basis/" style="font-size: 14px; color: #999">异或线性基</a> <a href="/tags/number-theory/" style="font-size: 14px; color: #999">数论</a> <a href="/tags/%E6%95%B4%E4%BD%93%E4%BA%8C%E5%88%86/" style="font-size: 14px; color: #999">整体二分</a> <a href="/tags/slope/" style="font-size: 14px; color: #999">斜率优化</a> <a href="/tags/max-flow/" style="font-size: 14px; color: #999">最大流</a> <a href="/tags/LIS/" style="font-size: 14px; color: #999">最长上升子序列</a> <a href="/tags/%E6%A0%91%E5%A5%97%E6%A0%91/" style="font-size: 14px; color: #999">树套树</a> <a href="/tags/simulate/" style="font-size: 19px; color: #777">模拟</a> <a href="/tags/segment-tree/" style="font-size: 14px; color: #999">线段树</a> <a href="/tags/flow/" style="font-size: 19px; color: #777">网络流</a> <a href="/tags/automaton/" style="font-size: 14px; color: #999">自动机</a>
+      <a href="/tags/BIT/" style="font-size: 14px; color: #999">BIT</a> <a href="/tags/BST/" style="font-size: 14px; color: #999">BST</a> <a href="/tags/DP/" style="font-size: 14px; color: #999">DP</a> <a href="/tags/FFT/" style="font-size: 14px; color: #999">FFT</a> <a href="/tags/splay/" style="font-size: 14px; color: #999">splay</a> <a href="/tags/volantis/" style="font-size: 14px; color: #999">volantis</a> <a href="/tags/wqs-binary-search/" style="font-size: 14px; color: #999">wqs二分</a> <a href="/tags/binary-lifting/" style="font-size: 14px; color: #999">倍增</a> <a href="/tags/quadrangle/" style="font-size: 14px; color: #999">决策单调性优化</a> <a href="/tags/%E5%88%86%E5%9D%97/" style="font-size: 14px; color: #999">分块</a> <a href="/tags/dynamic-tree/" style="font-size: 14px; color: #999">动态树</a> <a href="/tags/interval-DP/" style="font-size: 14px; color: #999">区间DP</a> <a href="/tags/persistent/" style="font-size: 14px; color: #999">可持久化</a> <a href="/tags/BBT/" style="font-size: 24px; color: #555">平衡树</a> <a href="/tags/xor-linear-basis/" style="font-size: 14px; color: #999">异或线性基</a> <a href="/tags/number-theory/" style="font-size: 14px; color: #999">数论</a> <a href="/tags/%E6%95%B4%E4%BD%93%E4%BA%8C%E5%88%86/" style="font-size: 14px; color: #999">整体二分</a> <a href="/tags/slope/" style="font-size: 14px; color: #999">斜率优化</a> <a href="/tags/max-flow/" style="font-size: 14px; color: #999">最大流</a> <a href="/tags/LIS/" style="font-size: 14px; color: #999">最长上升子序列</a> <a href="/tags/%E6%A0%91%E5%A5%97%E6%A0%91/" style="font-size: 14px; color: #999">树套树</a> <a href="/tags/simulate/" style="font-size: 19px; color: #777">模拟</a> <a href="/tags/segment-tree/" style="font-size: 14px; color: #999">线段树</a> <a href="/tags/flow/" style="font-size: 19px; color: #777">网络流</a> <a href="/tags/automaton/" style="font-size: 14px; color: #999">自动机</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/" style="font-size: 14px; color: #999">计算几何</a>
     </div>
   </section>
 
@@ -4277,7 +4279,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://free.picui.cn/free/2025/03/10/67ce8d42c9e38.jpg","https://free.picui.cn/free/2025/03/10/67ce8d8c22f16.jpg","https://free.picui.cn/free/2025/03/10/67ce8d4194d4e.jpg","https://free.picui.cn/free/2025/03/10/67ce87fc57d38.jpg","https://free.picui.cn/free/2025/03/10/67ce8d8c76c2f.jpg","https://free.picui.cn/free/2025/03/10/67ce8d41ae4fd.jpg","https://free.picui.cn/free/2025/03/10/67ce87fe5c12b.jpg","https://free.picui.cn/free/2025/03/10/67ce8d8cdee6f.jpg","https://free.picui.cn/free/2025/03/10/67ce87fd6f230.jpg","https://free.picui.cn/free/2025/03/10/67ce8d41c0475.jpg","https://free.picui.cn/free/2025/03/10/67ce8d4272f16.jpg","https://free.picui.cn/free/2025/03/10/67ce87fe00f21.jpg","https://free.picui.cn/free/2025/03/10/67ce87fe2aff8.jpg"];
+  let imgs = ["https://free.picui.cn/free/2025/03/10/67ce8d41c0475.jpg","https://free.picui.cn/free/2025/03/10/67ce8d4272f16.jpg","https://free.picui.cn/free/2025/03/10/67ce87fe00f21.jpg","https://free.picui.cn/free/2025/03/10/67ce87fd6f230.jpg","https://free.picui.cn/free/2025/03/10/67ce8d42c9e38.jpg","https://free.picui.cn/free/2025/03/10/67ce8d8c22f16.jpg","https://free.picui.cn/free/2025/03/10/67ce87fe2aff8.jpg","https://free.picui.cn/free/2025/03/10/67ce8d41ae4fd.jpg","https://free.picui.cn/free/2025/03/10/67ce8d8cdee6f.jpg","https://free.picui.cn/free/2025/03/10/67ce8d8c76c2f.jpg","https://free.picui.cn/free/2025/03/10/67ce87fc57d38.jpg","https://free.picui.cn/free/2025/03/10/67ce87fe5c12b.jpg","https://free.picui.cn/free/2025/03/10/67ce8d4194d4e.jpg"];
   let index = 0;
   let IntervalParallax = null;
 

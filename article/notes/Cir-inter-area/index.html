@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/friends/"/>
+  <link rel="canonical" href="http://example.com/article/notes/cir-inter-area/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -44,20 +44,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>友链 - fush</title>
-  <meta name="keywords" content="null">
-  <meta desc name="description" content="大佬和朋友们 - fush - fush">
+  <title>学习笔记《求圆面积并》 - fush</title>
+  <meta name="keywords" content="计算几何,null">
+  <meta desc name="description" content="fush - fush - fush">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="fush">
-<meta property="og:url" content="http://example.com/friends/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习笔记《求圆面积并》">
+<meta property="og:url" content="http://example.com/article/notes/Cir-inter-area/index.html">
 <meta property="og:site_name" content="fush">
-<meta property="og:description" content="大佬和朋友们">
+<meta property="og:description" content="记录一下我们机房一位大佬的做法。 我们先把重叠的圆删去，考虑求出合并后的轮廓，即每个圆没有交的圆弧。 为了后面方便，我们要求每段圆弧是单调的。 枚举每个圆，求出他和其他圆的交点（用与 x 轴正半轴的夹角表示）。 那么两个节点间的圆弧是没用的，排序后，利用类似差分的思路即可。  图中红圈表示当前圆，绿点表示 +1，蓝点表示 -1，黄点表示 0。 用黄点是把圆分成 4 份单调的弧，起点为 0 即可。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/m7vu27io.png">
-<meta property="article:published_time" content="2025-01-09T01:29:01.347Z">
-<meta property="article:modified_time" content="2025-01-09T01:29:01.347Z">
+<meta property="article:published_time" content="2025-11-18T01:45:41.000Z">
+<meta property="article:modified_time" content="2025-11-18T02:59:18.342Z">
 <meta property="article:author" content="fush">
+<meta property="article:tag" content="计算几何">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.luogu.com.cn/upload/image_hosting/m7vu27io.png">
   <style>
@@ -2129,7 +2130,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2701,8 +2702,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article id="friends" class="md post article article-entry l_friends white-box reveal shadow floatable blur article-type-friends" itemscope itemprop="blogPost">
-    
+  <article itemscope itemtype="https://schema.org.cn/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/article/notes/Cir-inter-area/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="fush">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="fush">
+    <meta itemprop="description" content="">
+  </span>
+  
 
 
   
@@ -2714,111 +2723,106 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <span hidden itemprop="name headline">
+      <h1 class="title" itemprop="name headline">
+        学习笔记《求圆面积并》
+      </h1>
+      <div class='new-meta-box'>
         
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="https://schema.org.cn/Person">
+  <a itemprop="url" class='author' href="/about/" rel="nofollow">
+    <img itemprop="image" src="https://cdn.luogu.com.cn/upload/image_hosting/m7vu27io.png" class="lazyload" data-srcset="https://cdn.luogu.com.cn/upload/image_hosting/m7vu27io.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">fush</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/notes/">学习笔记</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+        <a href="/categories/notes/" itemprop="url"><span itemprop="name">学习笔记</span></a>
       </span>
+    
+  </div>
+  
+
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-11-18T09:45:41+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2025年11月18日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
 
 
-    <p>大佬和朋友们</p>
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <span id="more"></span>
+<p>记录一下我们机房一位大佬的做法。</p>
+<p>我们先把重叠的圆删去，考虑求出合并后的轮廓，即每个圆没有交的圆弧。<br />
+为了后面方便，我们要求每段圆弧是单调的。</p>
+<p>枚举每个圆，求出他和其他圆的交点（用与 x 轴正半轴的夹角表示）。<br />
+那么两个节点间的圆弧是没用的，排序后，利用类似差分的思路即可。</p>
+<p><img src="https://free.picui.cn/free/2025/11/18/691bd7b72ba95.png" class="lazyload" data-srcset="https://free.picui.cn/free/2025/11/18/691bd7b72ba95.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" /></p>
+<p>图中红圈表示当前圆，绿点表示 +1，蓝点表示 -1，黄点表示 0。<br />
+用黄点是把圆分成 4 份单调的弧，起点为 0 即可。<br />
+为了避免有交点包含 0 点，需要特判，详见代码。</p>
+<p>然后我们对每个交点，圆的最左，最右，中间都做一条垂直 x 轴的直线。</p>
+<p><img src="https://free.picui.cn/free/2025/11/18/691bdeed463e4.png" class="lazyload" data-srcset="https://free.picui.cn/free/2025/11/18/691bdeed463e4.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" /></p>
+<p>那么每两条直线之间的面积是好算的。<br />
+都是一个上弧对应一个下弧，变成一个梯形加两个弓形即可。</p>
+<p>由于交点的数量是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span> 级别的，所以总复杂度 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mi>l</mi><mi>o</mi><mi>g</mi><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>。<br />
+spoj CIRU 在 120ms 左右。</p>
+<details blue><summary> 代码 </summary>
+              <div class='content'>
+              <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> endl <span class="string">&#x27;\n&#x27;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> FL(a,b,c) for(int a=(b),a##end=(c);a&lt;=a##end;++a)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> FR(a,b,c) for(int a=(b),a##end=(c);a&gt;=a##end;--a)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> lowbit(x) ((x)&amp;-(x))</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> eb emplace_back</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> sz(x) (int)((x).size())</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> vt vector</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> fr first</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> se second</span></span><br><span class="line"><span class="type">bool</span> IOS=(cin.<span class="built_in">tie</span>(<span class="number">0</span>)-&gt;<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>),<span class="number">0</span>);</span><br><span class="line"><span class="comment">// #define LOCAL </span></span><br><span class="line"><span class="meta">#<span class="keyword">ifdef</span> LOCAL</span></span><br><span class="line"><span class="type">bool</span> IOS1=(<span class="built_in">freopen</span>(LOCA<span class="string">L&quot;.in&quot;</span>, <span class="string">&quot;r&quot;</span>, stdin),<span class="number">1</span>);</span><br><span class="line"><span class="type">bool</span> IOS2=(<span class="built_in">freopen</span>(LOCA<span class="string">L&quot;.out&quot;</span>, <span class="string">&quot;w&quot;</span>, stdout),<span class="number">1</span>);</span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> mmt(x, y) memset(x, y, sizeof x)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PII pair<span class="string">&lt;int, int&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> max(a, b)(&#123;auto f7r=(a);auto j3h=(b);f7r&lt;j3h?j3h:f7r;&#125;)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> cmax(a, b)(&#123;auto j3h=(b);(j3h&gt;a)&amp;&amp;(a=j3h);&#125;)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> min(a, b)(&#123;auto f7r=(a);auto j3h=(b);f7r&gt;j3h?j3h:f7r;&#125;)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> cmin(a, b)(&#123;auto j3h=(b);(j3h&lt;a)&amp;&amp;(a=j3h);&#125;)</span></span><br><span class="line"><span class="keyword">constexpr</span> <span class="type">int</span> N = <span class="number">1e6</span> + <span class="number">10</span>;</span><br><span class="line"><span class="keyword">namespace</span> cg&#123;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">double</span> Ld;</span><br><span class="line"><span class="type">const</span> Ld eps = <span class="number">1e-9</span>;</span><br><span class="line"><span class="type">const</span> Ld PI = <span class="number">3.1415926535897932626</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">bool</span> <span class="title">is_zero</span><span class="params">(Ld x)</span></span>&#123;<span class="keyword">return</span> <span class="built_in">fabs</span>(x) &lt; eps;&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">bool</span> <span class="title">eq</span><span class="params">(Ld x, Ld y)</span></span>&#123;<span class="keyword">return</span> <span class="built_in">is_zero</span>(x - y);&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">bool</span> <span class="title">lt</span><span class="params">(Ld x, Ld y)</span></span>&#123;<span class="keyword">return</span> !<span class="built_in">eq</span>(x, y) &amp;&amp; x &lt; y;&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">bool</span> <span class="title">gt</span><span class="params">(Ld x, Ld y)</span></span>&#123;<span class="keyword">return</span> !<span class="built_in">eq</span>(x, y) &amp;&amp; x &gt; y;&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Vec</span>&#123;</span><br><span class="line">    Ld x, y;</span><br><span class="line">    <span class="built_in">Vec</span>():<span class="built_in">x</span>(<span class="number">0</span>), <span class="built_in">y</span>(<span class="number">0</span>)&#123;&#125;</span><br><span class="line">    <span class="built_in">Vec</span>(Ld x, Ld y):<span class="built_in">x</span>(x), <span class="built_in">y</span>(y)&#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">inline</span> Ld <span class="title">length</span><span class="params">()</span><span class="type">const</span></span>&#123;<span class="keyword">return</span> <span class="built_in">sqrt</span>(x * x + y * y);&#125;</span><br><span class="line">    <span class="comment">// 方向角，单位 rad, [-pi, pi]</span></span><br><span class="line">    <span class="function"><span class="keyword">inline</span> Ld <span class="title">ang</span><span class="params">()</span><span class="type">const</span></span>&#123;<span class="keyword">return</span> <span class="built_in">atan2</span>(y, x);&#125;</span><br><span class="line">    <span class="comment">// 方向不变，调整长度为 len （可以是负数）</span></span><br><span class="line">    <span class="function"><span class="keyword">inline</span> Vec <span class="title">resize</span><span class="params">(Ld len)</span><span class="type">const</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(*<span class="keyword">this</span>)<span class="keyword">return</span> len /= <span class="built_in">length</span>(), <span class="built_in">Vec</span>(x * len, y * len);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> <span class="built_in">Vec</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    Vec <span class="keyword">operator</span>+(<span class="type">const</span> Vec V)<span class="type">const</span>&#123;<span class="keyword">return</span> <span class="built_in">Vec</span>(x + V.x, y + V.y);&#125;</span><br><span class="line">    Vec <span class="keyword">operator</span>-()<span class="type">const</span>&#123;<span class="keyword">return</span> <span class="built_in">Vec</span>(-x, -y);&#125;</span><br><span class="line">    Vec <span class="keyword">operator</span>-(<span class="type">const</span> Vec V)<span class="type">const</span>&#123;<span class="keyword">return</span> *<span class="keyword">this</span> + (-V);&#125;</span><br><span class="line">    Vec <span class="keyword">operator</span>*(<span class="type">const</span> Ld a)<span class="type">const</span>&#123;<span class="keyword">return</span> <span class="built_in">Vec</span>(x * a, y * a);&#125;</span><br><span class="line">    <span class="keyword">friend</span> Vec <span class="keyword">operator</span>*(<span class="type">const</span> Ld a,<span class="type">const</span> Vec v)&#123;<span class="keyword">return</span> v * a;&#125;</span><br><span class="line">    Vec <span class="keyword">operator</span>/(<span class="type">const</span> Ld a)<span class="type">const</span>&#123;<span class="keyword">return</span> <span class="built_in">Vec</span>(x / a, y / a);&#125;</span><br><span class="line">    <span class="function"><span class="keyword">operator</span> <span class="title">bool</span><span class="params">()</span><span class="type">const</span></span>&#123;<span class="keyword">return</span> !(<span class="built_in">is_zero</span>(x) &amp;&amp; <span class="built_in">is_zero</span>(y));&#125;</span><br><span class="line">    <span class="type">bool</span> <span class="keyword">operator</span>==(<span class="type">const</span> Vec V)<span class="type">const</span>&#123;<span class="keyword">return</span>!<span class="built_in">bool</span>(*<span class="keyword">this</span> - V);&#125;</span><br><span class="line">    <span class="type">bool</span> <span class="keyword">operator</span>!=(<span class="type">const</span> Vec V)<span class="type">const</span>&#123;<span class="keyword">return</span> <span class="built_in">bool</span>(*<span class="keyword">this</span> - V);&#125;</span><br><span class="line">    <span class="type">bool</span> <span class="built_in">operator</span>&lt;(<span class="type">const</span> Vec V)<span class="type">const</span>&#123;<span class="keyword">return</span> <span class="built_in">eq</span>(x, V.x) ? <span class="built_in">lt</span>(y, V.y) : <span class="built_in">lt</span>(x, V.x);&#125;</span><br><span class="line">    <span class="type">bool</span> <span class="keyword">operator</span>&gt;(<span class="type">const</span> Vec V)<span class="type">const</span>&#123;<span class="keyword">return</span> <span class="built_in">eq</span>(x, V.x) ? <span class="built_in">gt</span>(y, V.y) : <span class="built_in">gt</span>(x, V.x);&#125;</span><br><span class="line">    <span class="comment">// 顺时针旋转 90 度</span></span><br><span class="line">    <span class="function">Vec <span class="title">cw_r90</span><span class="params">()</span></span>&#123;<span class="keyword">return</span> <span class="built_in">Vec</span>(y, -x);&#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">typedef</span> Vec Pt;</span><br><span class="line"><span class="comment">// 两个点的距离</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> Ld <span class="title">dst</span><span class="params">(Pt a, Pt b)</span></span>&#123;<span class="keyword">return</span> (b - a).<span class="built_in">length</span>();&#125;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Cir</span>&#123;</span><br><span class="line">    Pt o;Ld r;</span><br><span class="line">    <span class="built_in">Cir</span>()&#123;r = <span class="number">0</span>;&#125;</span><br><span class="line">    <span class="built_in">Cir</span>(Pt _o, Ld _r):<span class="built_in">o</span>(_o), <span class="built_in">r</span>(_r)&#123;&#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 判断 a,b 两个圆的位置关系（切线数量）</span></span><br><span class="line"><span class="comment">// 0 表示包含，1 表示内切，2 表示相交，3 表示外切，4 表示相离</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">cir_inter_kind</span><span class="params">(Cir a, Cir b)</span></span>&#123;</span><br><span class="line">    Ld d = <span class="built_in">dst</span>(a.o, b.o);</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">gt</span>(d, a.r + b.r))<span class="keyword">return</span> <span class="number">4</span>;</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">eq</span>(d, a.r + b.r))<span class="keyword">return</span> <span class="number">3</span>;</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">gt</span>(d, <span class="built_in">fabsl</span>(a.r - b.r)))<span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">eq</span>(d, <span class="built_in">fabsl</span>(a.r - b.r)))<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 求两圆的交点。如果相切那么返回两个相同的点。不会检查是否有交点。要求你提前判定</span></span><br><span class="line"><span class="comment">// 一个 pair (p1, p2) 表示值，为弧度制（X 轴平行线为始边），保证 p1-&gt;p2 顺时针的圆弧被 c2 覆盖</span></span><br><span class="line"><span class="function">pair&lt;Ld, Ld&gt; <span class="title">cir_inter_Ld</span><span class="params">(Cir c1, Cir c2)</span></span>&#123;</span><br><span class="line">    Vec oo = c<span class="number">2.</span>o - c<span class="number">1.</span>o;</span><br><span class="line">    Ld d = oo.<span class="built_in">length</span>(), p = oo.<span class="built_in">ang</span>(), D = (c<span class="number">1.</span>r * c<span class="number">1.</span>r + d * d - c<span class="number">2.</span>r * c<span class="number">2.</span>r), b1, b2;</span><br><span class="line">    D = <span class="built_in">acosl</span>(D / (<span class="number">2</span> * c<span class="number">1.</span>r * d)), b1 = p + D, b2 = p - D;</span><br><span class="line">    (b1 &gt;= <span class="number">2</span> * PI) &amp;&amp; (b1 -= <span class="number">2</span> * PI), (b2 &lt; <span class="number">0</span>) &amp;&amp; (b2 += <span class="number">2</span> * PI);</span><br><span class="line">    (b1 &lt; <span class="number">0</span>) &amp;&amp; (b1 += <span class="number">2</span> * PI), (b2 &gt;= <span class="number">2</span> * PI) &amp;&amp; (b2 -= <span class="number">2</span> * PI);</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">make_pair</span>(b1, b2);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 求弓形面积，r 是半径，angle 是弓形所对的圆心角，单位 rad</span></span><br><span class="line"><span class="function">Ld <span class="title">cir_seg_area</span><span class="params">(Ld r, Ld angle)</span></span>&#123;<span class="keyword">return</span> r * r * (angle - <span class="built_in">sinl</span>(angle)) / <span class="built_in">Ld</span>(<span class="number">2</span>);&#125;</span><br><span class="line"><span class="comment">// 将重叠的圆删除</span></span><br><span class="line"><span class="function">vt&lt;Cir&gt; <span class="title">cir_clear_coincide</span><span class="params">(vt&lt;Cir&gt;g)</span></span>&#123;</span><br><span class="line">    vt&lt;Cir&gt;w;<span class="built_in">sort</span>(g.<span class="built_in">begin</span>(), g.<span class="built_in">end</span>(), [](Cir&amp;a, Cir&amp;b)&#123;<span class="keyword">return</span> a.r &gt; b.r;&#125;);</span><br><span class="line">    <span class="built_in">FL</span>(i, <span class="number">0</span>, <span class="built_in">sz</span>(g) - <span class="number">1</span>)&#123;</span><br><span class="line">        <span class="type">bool</span> flag = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">auto</span>&amp;k : w)<span class="keyword">if</span>(<span class="built_in">cir_inter_kind</span>(g[i], k) &lt;= <span class="number">1</span>)&#123;flag = <span class="number">0</span>;<span class="keyword">break</span>;&#125;</span><br><span class="line">        <span class="keyword">if</span>(flag)w.<span class="built_in">push_back</span>(g[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> w;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 以 x 轴平行线为始边旋转 ang，后在 a 圆上的位置</span></span><br><span class="line"><span class="function">Pt <span class="title">cir_rotate_ang</span><span class="params">(Cir a, Ld ang)</span></span>&#123;<span class="keyword">return</span> a.o + <span class="built_in">Vec</span>(<span class="built_in">cosl</span>(ang) * a.r, <span class="built_in">sinl</span>(ang) * a.r);&#125;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">arcs</span>&#123;</span><br><span class="line">    Cir o;<span class="type">bool</span> s;Ld l, r;<span class="comment">//1 是上弧，0 是下弧</span></span><br><span class="line">    <span class="built_in">arcs</span>():<span class="built_in">o</span>(), <span class="built_in">s</span>(), <span class="built_in">l</span>(), <span class="built_in">r</span>() &#123;&#125;</span><br><span class="line">	<span class="built_in">arcs</span>(<span class="type">const</span> Cir o, <span class="type">bool</span> s, Ld l, Ld r):<span class="built_in">o</span>(o), <span class="built_in">s</span>(s), <span class="built_in">l</span>(l), <span class="built_in">r</span>(r)&#123;&#125;</span><br><span class="line">    <span class="comment">//圆弧上 x 点的纵坐标</span></span><br><span class="line">    <span class="function">Ld <span class="title">get</span><span class="params">(Ld x)</span></span>&#123;<span class="keyword">return</span> x -= o.o.x, x = <span class="built_in">sqrtl</span>(<span class="built_in">fabsl</span>(o.r * o.r - x * x)), o.o.y + (s ? x : -x);&#125;</span><br><span class="line">    <span class="comment">//弧对应的圆周角大小，单位 rad</span></span><br><span class="line">    <span class="function">Ld <span class="title">ang</span><span class="params">()</span></span>&#123;</span><br><span class="line">        Ld x1 = (l - o.o.x) / o.r, x2 = (r - o.o.x) / o.r, r1, r2;</span><br><span class="line">        <span class="built_in">cmax</span>(x1, <span class="number">-1</span>), <span class="built_in">cmin</span>(x1, <span class="number">1</span>), <span class="built_in">cmax</span>(x2, <span class="number">-1</span>), <span class="built_in">cmin</span>(x2, <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">return</span> r1 = <span class="built_in">acos</span>(x1), r2 = <span class="built_in">acosl</span>(x2), <span class="built_in">fabsl</span>(r1 - r2);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 多个圆面积交</span></span><br><span class="line"><span class="function">Ld <span class="title">cir_inter_area</span><span class="params">(vt&lt;Cir&gt;g)</span></span>&#123;</span><br><span class="line">    vt&lt;Cir&gt;w = <span class="built_in">cir_clear_coincide</span>(g);vt&lt;Ld&gt;imp;vt&lt;arcs&gt;arc;</span><br><span class="line">    <span class="built_in">FL</span>(i, <span class="number">0</span>, <span class="built_in">sz</span>(w) - <span class="number">1</span>)&#123;</span><br><span class="line">        vt&lt;pair&lt;Ld, <span class="type">int</span>&gt;&gt;d;<span class="type">int</span> c = <span class="number">0</span>;d.<span class="built_in">eb</span>(PI / <span class="number">2</span>, <span class="number">0</span>), d.<span class="built_in">eb</span>(PI * <span class="number">3</span> / <span class="number">2</span>, <span class="number">0</span>);</span><br><span class="line">        <span class="built_in">FL</span>(j, <span class="number">0</span>, <span class="built_in">sz</span>(w) - <span class="number">1</span>)<span class="keyword">if</span>(i != j &amp;&amp; <span class="built_in">cir_inter_kind</span>(w[i], w[j]) &lt; <span class="number">4</span>)&#123;</span><br><span class="line">            pair&lt;Ld, Ld&gt;k = <span class="built_in">cir_inter_Ld</span>(w[i], w[j]);</span><br><span class="line">            (k.fr &lt; k.se) &amp;&amp; (c++), d.<span class="built_in">eb</span>(k.fr, <span class="number">-1</span>), d.<span class="built_in">eb</span>(k.se, <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        d.<span class="built_in">eb</span>(PI * <span class="number">2</span>, <span class="number">0</span>), d.<span class="built_in">eb</span>(PI, <span class="number">0</span>), <span class="built_in">sort</span>(d.<span class="built_in">begin</span>(), d.<span class="built_in">end</span>());</span><br><span class="line">        Ld lst = <span class="number">0</span>;vt&lt;pair&lt;Ld, Ld&gt;&gt;s;</span><br><span class="line">        <span class="built_in">FL</span>(j, <span class="number">0</span>, <span class="built_in">sz</span>(d) - <span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(!c)s.<span class="built_in">eb</span>(lst, d[j].fr);</span><br><span class="line">            c += d[j].se, lst = d[j].fr;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">auto</span>&amp;a : s)&#123;</span><br><span class="line">            Ld l = <span class="built_in">cir_rotate_ang</span>(w[i], a.fr).x, r = <span class="built_in">cir_rotate_ang</span>(w[i], a.se).x;</span><br><span class="line">            (l &gt; r) &amp;&amp; (<span class="built_in">swap</span>(l, r), <span class="number">1</span>), imp.<span class="built_in">eb</span>(l), imp.<span class="built_in">eb</span>(r), arc.<span class="built_in">eb</span>(w[i], !<span class="built_in">gt</span>(a.se, PI), l, r);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">sort</span>(imp.<span class="built_in">begin</span>(), imp.<span class="built_in">end</span>()), imp.<span class="built_in">erase</span>(<span class="built_in">unique</span>(imp.<span class="built_in">begin</span>(), imp.<span class="built_in">end</span>(), </span><br><span class="line">        [](Ld&amp;a, Ld&amp;b)&#123;<span class="keyword">return</span> <span class="built_in">fabsl</span>(a - b) &lt;= eps;&#125;), imp.<span class="built_in">end</span>());</span><br><span class="line">    <span class="type">int</span> iz = imp.<span class="built_in">size</span>();vt&lt;vt&lt;arcs&gt;&gt;<span class="built_in">bnd</span>(iz - <span class="number">1</span>);Ld ans = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">FL</span>(i, <span class="number">0</span>, iz - <span class="number">2</span>)&#123;</span><br><span class="line">        <span class="type">long</span> <span class="type">double</span> l = imp[i], r = imp[i + <span class="number">1</span>];<span class="keyword">auto</span> &amp;a = bnd[i];</span><br><span class="line">		<span class="keyword">if</span>(r - l &lt;= eps)<span class="keyword">continue</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">auto</span>&amp;v : arc)<span class="keyword">if</span>(v.l - eps &lt;= l &amp;&amp; r &lt;= v.r + eps)a.<span class="built_in">eb</span>(v.o, v.s, v.<span class="built_in">get</span>(l), v.<span class="built_in">get</span>(r));</span><br><span class="line">        <span class="built_in">sort</span>(a.<span class="built_in">begin</span>(), a.<span class="built_in">end</span>(),[&amp;](arcs&amp;x, arcs&amp;y)-&gt;<span class="type">bool</span> &#123;<span class="keyword">return</span> x.l + x.r &gt; y.l + y.r;&#125;);</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="built_in">sz</span>(a); i += <span class="number">2</span>)&#123;</span><br><span class="line">            arcs&amp;r1 = a[i], &amp;r2 = a[i + <span class="number">1</span>];</span><br><span class="line">            Ld x1 = r<span class="number">1.</span><span class="built_in">get</span>(l), x2 = r<span class="number">2.</span><span class="built_in">get</span>(l), y1 = r<span class="number">1.</span><span class="built_in">get</span>(r), y2 = r<span class="number">2.</span><span class="built_in">get</span>(r);</span><br><span class="line">            ans += (x1 - x2 + y1 - y2) * (r - l) / <span class="number">2</span>, r<span class="number">1.l</span> = l, r<span class="number">1.</span>r = r, r<span class="number">2.l</span> = l, r<span class="number">2.</span>r = r;</span><br><span class="line">            ans += <span class="built_in">cir_seg_area</span>(r<span class="number">1.</span>o.r, r<span class="number">1.</span><span class="built_in">ang</span>()) + <span class="built_in">cir_seg_area</span>(r<span class="number">2.</span>o.r, r<span class="number">2.</span><span class="built_in">ang</span>());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int32_t</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin &gt;&gt; n;vt&lt;cg::Cir&gt;<span class="built_in">a</span>(n);</span><br><span class="line">    <span class="built_in">FL</span>(i, <span class="number">0</span>, n - <span class="number">1</span>)cin &gt;&gt; a[i].o.x &gt;&gt; a[i].o.y &gt;&gt; a[i].r;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%.3Lf&quot;</span>, cg::<span class="built_in">cir_inter_area</span>(a));</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+  </div>
+  
+  
     
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div class='friends-group'>
-          <br>
-          <h2 class='friend-header'>
-            魔改大佬
-          </h2>
-          
-            <p>大佬</p>
-
-          
-          
-            <div class='friend-content'>
-              
-                
-                  <a class='friend-card'
-                    target="_blank" rel="external noopener noreferrer" href="https://blog.dearxuan.com/">
-                    <div class='friend-left'>
-                      
-                        <img class='avatar' src='https://bu.dusays.com/2021/08/25/32f61f6ad6985.png'/>
-                      
-                    </div>
-                    <div class='friend-right'>
-                      <p class="friend-name">DearXuan</p>
-                      
-                      
-                        <div class='friend-tags-wrapper'>
-                          <p class="tags">volantis</p>
-                        </div>
-                      
-                    </div>
-                  </a>
-                
-              
-                
-                  <a class='friend-card'
-                    target="_blank" rel="external noopener noreferrer" href="https://akilar.top/">
-                    <div class='friend-left'>
-                      
-                        <img class='avatar' src='https://npm.elemecdn.com/akilar-candyassets/image/siteicon/favicon.png'/>
-                      
-                    </div>
-                    <div class='friend-right'>
-                      <p class="friend-name">akilr</p>
-                      
-                      
-                        <div class='friend-tags-wrapper'>
-                          <p class="tags">butterfly</p>
-                        </div>
-                      
-                    </div>
-                  </a>
-                
-              
-            </div>
-          
-        </div>
+       <!-- 相关文章 -->
       
-        <div class='friends-group'>
-          <br>
-          <h2 class='friend-header'>
-            朋友
-          </h2>
-          
-            <p>好朋友</p>
-
-          
-          
-            <div class='friend-content'>
-              
-                
-                  <a class='friend-card'
-                    target="_blank" rel="external noopener noreferrer" href="https://newfiles-github.github.io/">
-                    <div class='friend-left'>
-                      
-                        <img class='avatar' src='https://gcore.jsdelivr.net/gh/fush-git/picgo/20241227103454627.png'/>
-                      
-                    </div>
-                    <div class='friend-right'>
-                      <p class="friend-name">int_stl</p>
-                      
-                      
-                        <div class='friend-tags-wrapper'>
-                          <p class="tags">好朋友</p>
-                        </div>
-                      
-                    </div>
-                  </a>
-                
-              
-            </div>
-          
-        </div>
+      <!-- 版权声明组件 -->
       
-    
-    <br><br>
-    
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
     
 
 
@@ -2826,10 +2830,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-01-09T09:29:01+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-11-18T10:59:18+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2025年1月9日</p>
+    <p>更新于：2025年11月18日</p>
   </a>
 </div>
 
@@ -2837,6 +2841,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>计算几何</p></a></div>
+  <span hidden itemprop="keywords">计算几何</span>
+  
+
 
         
       
@@ -2848,7 +2859,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/friends/index.html&title=友链 - fush&summary=大佬和朋友们"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/article/notes/Cir-inter-area/&title=学习笔记《求圆面积并》 - fush&summary="
           
           >
           
@@ -2860,7 +2871,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/friends/index.html&title=友链 - fush&summary=大佬和朋友们"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/article/notes/Cir-inter-area/&title=学习笔记《求圆面积并》 - fush&summary="
           
           >
           
@@ -2872,7 +2883,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/friends/index.html&title=友链 - fush&summary=大佬和朋友们"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/article/notes/Cir-inter-area/&title=学习笔记《求圆面积并》 - fush&summary="
           
           >
           
@@ -2899,14 +2910,40 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </div>
 
 
-  </article>
   
   
 
   
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/article/notes/slope/'>
+          <p class='title'>学习笔记《斜率优化》<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>斜率优化与例题。
+
+ 简述
+对于一个 dpi=min⁡/max⁡j=1idpj+Ci+Cj+FiFjdp_i = {\min/\max}_{j=1}^i dp_j + C_i + C_j + F...</p>
+        </a>
+      
+    </div>
+  
+  <!-- 文章推荐 -->
+  
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
 
 
   
+
+  
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="https://schema.org.cn/WPSideBar">
   
@@ -2972,8 +3009,37 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   
 
+  
+
+  
+    
+    
+      
+    
+  
+
 
 <div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop mobile" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+      
+  </div>
+</section>
+
+  
 
 </div>
 
@@ -2981,6 +3047,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <!-- Custom Files side end -->
 </aside>
+
 
 
         </div>
@@ -3929,7 +3996,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"fush","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"fush"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"fush","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"fush","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"友链","description":"大佬和朋友们","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/friends/index.html"},"author":{"@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"fush","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/friends/index.html","wordCount":6,"datePublished":"2025-01-09T01:29:01.347Z","dateModified":"2025-01-09T01:29:01.347Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"fush","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"fush"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/notes/","name":"学习笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com//article/notes/Cir-inter-area/","name":"学习笔记《求圆面积并》"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"fush","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"fush","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"学习笔记《求圆面积并》","description":"","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/article/notes/Cir-inter-area/"},"author":{"@type":"Person","name":"fush","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"fush","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/article/notes/Cir-inter-area/","wordCount":0,"datePublished":"2025-11-18T01:45:41.000Z","dateModified":"2025-11-18T02:59:18.342Z","articleSection":"学习笔记","keywords":"计算几何","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
